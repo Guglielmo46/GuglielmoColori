@@ -20,7 +20,7 @@ if ($userLoggedIn != null) {
 <head>
   <meta charset="UTF-8">
   <title>Colorambo v0.0.1</title>
-  <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i|Montserrat+Alternates:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -72,8 +72,8 @@ if ($userLoggedIn != null) {
                       <?=$color['name']?>
                       &nbsp &nbsp &nbsp
                     </a>
-                    <a href=""><i class="fa fa-pencil" aria-hidden="true" style="color: #888"></i></a>
-                    &nbsp &nbsp
+                    <a href="modifica_colore.php"><i class="fa fa-pencil" aria-hidden="true" style="color: #888"></i></a>
+                    &nbsp &nbsp 
                     <a href=""><i class="fa fa-trash" aria-hidden="true" style="color: #888"></i></a>
                     <?php } ?>
                   </span>
