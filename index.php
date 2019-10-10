@@ -72,7 +72,7 @@ if ($userLoggedIn != null) {
                       <?=$color['name']?>
                       &nbsp &nbsp &nbsp
                     </a>
-                    <a href="modifica_colore.php"><i class="fa fa-pencil" aria-hidden="true" style="color: #888"></i></a>
+                    <a href="modifica_colore.php?id=<?=$color['id']?>"><i class="fa fa-pencil" aria-hidden="true" style="color: #888"></i></a>
                     &nbsp &nbsp 
                     <a href=""><i class="fa fa-trash" aria-hidden="true" style="color: #888"></i></a>
                     <?php } ?>

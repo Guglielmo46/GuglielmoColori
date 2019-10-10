@@ -64,4 +64,12 @@ function addColor($name, $code) {
 
   createColor($conn, $name, $code);
 }
+
+function updateColor($name, $red, $green, $blue, $id) {
+  $conn = connectDB();
+
+  $editColor = " UPDATE colori SET column2 = $name, column3 = $red, column4 = $green, column5 = $blue WHERE id = $id ";
+}
 ?>
+
+
