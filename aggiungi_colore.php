@@ -34,30 +34,30 @@ if (isset($_POST['name'])) {
 <body>
   <div class="header">
     <h1>
-      <a href="index.php">
-          Colorambo
+      <a href="index.php" style="color: #f8bb5a; text-decoration: none">
+          Color-U
       </a>
     </h1>
     <div class="login">
       <?php if ($userLoggedIn == null) { ?>
       <span>
-        <i class="fas fa-user"></i>
+        
         <a href="login.php">Login</a>
       </span>
       <?php } else { ?>
       <div>
-        <i class="fas fa-user"></i>
+      <div id="img-user"></div>
         Ciao, <span class="tx-bold"><?=$userLoggedIn?></span>
       </div>
-      <a href="logout.php">Logout</a>
+      <a href="logout.php" style="color: #f8bb5a">Logout</a>
       <?php } ?>
     </div>
   </div>
   <div class="content">
     <div class="flex-cont-col max-width form-cont add-color">
-      <h1>Aggiungi Colore</h1>
+      <h1 style="color: #090446">Aggiungi Colore</h1>
       <form action="" method="POST">
-        <div>
+        <div id="name-set">
           <label for="name">Nome:</label>
           <input type="text" name="name">
         </div>
@@ -65,19 +65,19 @@ if (isset($_POST['name'])) {
           <label for="">Codice</label>
           <input type="text" name="code">
         </div> -->
-        <div>
+        <div class="slider-wrapper">
           <label for="">Rosso</label>
           <input type="range" min="0" max="255" name="red">
         </div>
-        <div>
+        <div class="slider-wrapper">
           <label for="">Verde</label>
           <input type="range" min="0" max="255" name="green">
         </div>
-        <div>
+        <div class="slider-wrapper">
           <label for="">Blue</label>
           <input type="range" min="0" max="255" name="blue">
         </div>
-        <div>
+        <div id="submit-set">
           <input type="submit" value="Aggiungi"/>
         </div>
       </form>

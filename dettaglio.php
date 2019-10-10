@@ -37,9 +37,11 @@ $bluePercentage = ($color['blue'] / 255.0) * 100;
 <body>
   <div class="header">
     <h1>
-      <a href="index.php">
-          Colorambo
+      
+      <a href="index.php" style="color: #f8bb5a; text-decoration: none">
+          Color-U
       </a>
+    
     </h1>
     <div class="login">
       <?php if ($userLoggedIn == null) { ?>
@@ -49,10 +51,10 @@ $bluePercentage = ($color['blue'] / 255.0) * 100;
       </span>
       <?php } else { ?>
       <div>
-        <i class="fas fa-user"></i>
+      <div id="img-user"></div>
         Ciao, <span class="tx-bold"><?=$userLoggedIn?></span>
       </div>
-      <a href="logout.php">Logout</a>
+      <a href="logout.php" style="color: #f8bb5a">Logout</a>
       <?php } ?>
     </div>
   </div>

@@ -49,16 +49,18 @@ body, html {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  background-color: #ccccff;
 }
 
 .header {
   height: 70px;
-  background-color: #f39c12;
-  color: white;
+  background-color: #090446;
+  color: #f8bb5a;
   text-align: center;
   display: flex;
   align-items: center;
   padding: 0 50px;
+  border-bottom: 4px solid #f8bb5a;
 }
 
 .header h1 {
@@ -86,6 +88,17 @@ body, html {
 
 .header .login a:hover {
   text-decoration: underline;
+}
+
+#img-user {
+  width:50px;
+  height: 50px;
+  position: absolute;
+  left: 83%;
+  background-image: url(user-image.jpg);
+  background-position: center;
+  background-size: contain;
+  top: 8px;
 }
 
 .content {
@@ -129,7 +142,7 @@ body, html {
   width: 100%;
   height: 0;
   padding-bottom: 100%;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .color-bg .color-cont {
@@ -287,4 +300,38 @@ p.error {
   font-family: 'Lobster Two', serif;
   font-size: 56px;
   font-weight: bold;
+}
+
+.slider-wrapper {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  padding: 0;
+  margin-top: 200px;
+}
+
+.slider-wrapper input {
+  width: 100px;
+  height: 10px;
+  margin: 20px;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
+
+.slider-wrapper label {
+  margin-left: 50px;
+}
+
+#name-set {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  top: 280px;
+}
+
+#submit-set {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  top: 400px;
 }
